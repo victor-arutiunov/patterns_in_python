@@ -1,0 +1,16 @@
+-
+  name: algeria
+  size: 2382000
+  population: 43850000
+  army_manpower: 300000
+  resources:
+    - iron ore
+    - oil
+-
+  name: marokko
+  size: 2382000
+  population: 36910000
+  army_manpower: 250000
+  resources:
+    - electricity
+    - sand
