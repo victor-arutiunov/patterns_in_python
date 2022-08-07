@@ -1,10 +1,11 @@
-Builder pattern types
 
+# Problem
 
-Many Director methods - one Builder | Flex Factory
+- excessive using of class inheritance which cause:
+  - large amount of parameters in __init__ method
+  - large amount of classes
 
+# Solution
 
-One Director method - many Builders | Fixed Factory
-
-
-Many Builder methods - many Builders | Parallel Factory
+- separate the construction(builder) of the object(product) and it's representation(state) in different classes
+- create the class(director) with methods which agregates the methods from builder and return specific product
