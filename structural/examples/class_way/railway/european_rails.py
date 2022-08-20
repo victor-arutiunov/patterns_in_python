@@ -1,5 +1,4 @@
 from abc import ABC, ABCMeta
-from module import AmericanRailway
 
 
 class EuropeanRailway(metaclass=ABCMeta):
@@ -8,7 +7,7 @@ class EuropeanRailway(metaclass=ABCMeta):
         if rail_width != 5:
             raise ValueError("This rail width is not supported by our network")
         self.rail_width = rail_width
-    
+
     def go_to_the_station(self):
         """release some method in child classes"""
 
@@ -27,21 +26,5 @@ class FranceRailway(EuropeanRailway):
         print(f"Croissant travel to the {station} station")
 
 
-class AmericanRailwayAdapter(EuropeanRailway, AmericanRailway):
-
-    @staticmethod
-    def go_to_the_station(station):
-        AmericanRailway.station_transfer(station)
-
-
-
-def main():
-
-    railways = [GermanRailway, FranceRailway, AmericanRailwayAdapter]
-
-    for railway in railways:
-        rw = railway(5)
-        rw.go_to_the_station("Cathalonia")
-
-
-main()
+german_rail = GermanRailway(5)
+france_rail = FranceRailway(5)

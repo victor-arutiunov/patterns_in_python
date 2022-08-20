@@ -1,7 +1,7 @@
 
 # Problem
 
-- our application works in different envs and each of this envs requires own deps, to manage this deps we need to use tons if-else satements
+- our application works in different envs and each of this envs requires own deps, to manage this deps we need to use tons of if-else satements
 
 # Solution
 

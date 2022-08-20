@@ -18,8 +18,6 @@ class GameTexture():
         self.size = size
 
 
-
-
 def main():
     params = {
         "type": "voxel",

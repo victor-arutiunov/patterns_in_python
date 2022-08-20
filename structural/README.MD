@@ -1,7 +1,7 @@
 
 # Problem
 
-- program which uses object(s) with specified interface, become broken when we want to use another object, but with different interface
+- program which uses object(s) with specified interface, become broken when we want to use another object with different interface
 - when we use set of objects of subclasses and one of them missed specific method or property(this problem also could be solved by "Decorator" pattern)
 
 # Solution

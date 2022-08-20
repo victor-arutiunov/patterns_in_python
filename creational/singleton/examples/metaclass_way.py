@@ -24,3 +24,4 @@ e1 = Engine(32)
 e2 = Engine(65)
 
 print(e1 is e2)
+print(e1.model, e2.model)

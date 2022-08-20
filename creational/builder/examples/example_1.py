@@ -59,14 +59,14 @@ class ReflectorTelecsopeBuilder:
         self.telecope.second_lens = second_lens
 
     def install_camera(self, camera):
-        self.telecope.camera = cameramirror
+        self.telecope.camera = camera
 
 
 class Engineer:
     def __init__(self):
         self.builder = None
 
-    def build_refractor_telecope_with_camere(self):
+    def build_refractor_telecope_with_camera(self):
         self.builder = RefractorTelecsopeBuilder()
 
         self.builder.install_lens("4x Superior")
@@ -88,7 +88,7 @@ class Engineer:
 
 engineer = Engineer()
 
-engineer.build_refractor_telecope_with_camere()
+engineer.build_refractor_telecope_with_camera()
 print(engineer.telecope)
 
 engineer.build_refractor_telecope_without_camera()
