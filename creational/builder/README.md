@@ -1,7 +1,7 @@
 
 # Problem
 
-- excessive using of class inheritance which cause:
+- excessive using of class inheritance(telescoping construcor) which cause:
   - large amount of parameters in __init__ method
   - large amount of classes
 

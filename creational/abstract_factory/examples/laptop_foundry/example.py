@@ -1,34 +1,28 @@
 from abc import ABC, abstractmethod
 
 
-class RAM(ABC):
+class RAM(metaclass=ABC):
     type = None
 
     def __str__(self):
         return f"{self.type} RAM with {self.amount}GB amount of memory"
 
 
-class DDR3RAM(ABC):
+class DDR3RAM(RAM):
     type = "DDR3"
 
     def __init__(self, amount):
         self.amount: int = amount
 
-    def __str__(self):
-        return f"{self.type} RAM with {self.amount}GB amount of memory"
 
-
-class DDR4RAM(ABC):
+class DDR4RAM(RAM):
     type = "DDR4"
 
     def __init__(self, amount):
         self.amount: int = amount
 
-    def __str__(self):
-        return f"{self.type} RAM with {self.amount}GB amount of memory"
 
-
-class Monitor(ABC):
+class Monitor(metaclass=ABC):
     type = None
 
     def __str__(self):
@@ -41,18 +35,12 @@ class OLEDMonitor(Monitor):
     def __init__(self, resolution):
         self.resolution = resolution
 
-    def __str__(self):
-        return f"{self.type} monitor with {self.resolution} resolution"
-
 
 class AMOLEDMonitor(Monitor):
     type = "AMOLED"
 
     def __init__(self, resolution):
         self.resolution = resolution
-
-    def __str__(self):
-        return f"{self.type} monitor with {self.resolution} resolution"
 
 
 class LaptopComponentsAbstractFactory(ABC):
