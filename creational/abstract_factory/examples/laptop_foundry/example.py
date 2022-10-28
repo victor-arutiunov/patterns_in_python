@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class RAM(metaclass=ABC):
-    type = None
+    type: str | None = None
 
     def __str__(self):
         return f"{self.type} RAM with {self.amount}GB amount of memory"

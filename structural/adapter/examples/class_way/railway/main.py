@@ -8,7 +8,7 @@ class AdapterAmericanRailwayToEuropean(EuropeanRailway, AmericanRailway):
         self.station_transfer(station)
 
 
-american_rail = AdapterAmericanRailwayToEuropean(5)
+american_rail = AdapterAmericanRailwayToEuropean()
 
 
 def main():

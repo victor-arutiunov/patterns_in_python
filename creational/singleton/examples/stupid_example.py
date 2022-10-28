@@ -5,7 +5,7 @@ class GoldenRing():
 
     def __init__(self, owner):
         if self._ring is not None:
-            raise ValueError("ring already created :(")
+            raise ValueError("Ring is already created :(")
 
         self.owner = owner
         self.__class__._ring = self

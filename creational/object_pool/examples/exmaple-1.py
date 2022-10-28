@@ -1,7 +1,7 @@
 
 class Pool():
     
-    def __init__(self, cls, size, params: dict):
+    def __init__(self, cls, size: int, params: dict):
         self._reusables = [cls(**params) for _ in range(size)]
     
     def acquire(self):
