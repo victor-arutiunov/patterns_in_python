@@ -2,7 +2,7 @@
 # Problem
 
 - we want to create the copy of the object, but have no access to his own class
-- we want to change the properties of the object, but have not access ot his own
+- we want to change the properties of the object, but have not access to his own
   class
 - prevent the creating tons of different classes which differs just by init values
 

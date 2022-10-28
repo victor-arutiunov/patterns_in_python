@@ -1,7 +1,7 @@
 
 # Problem
 
-- we have class, creating object of which requires many computing operations and we call this class to usually.
+- we have class, creating object of which requires many computing operations and we call this class to often.
 
 # Solution
 

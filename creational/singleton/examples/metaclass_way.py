@@ -1,7 +1,4 @@
 
-from curses import meta
-
-
 class SingletonMeta(type):
     
     def __init__(cls, name, bases, attrs, **kwargs):
